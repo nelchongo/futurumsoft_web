@@ -1,0 +1,7 @@
+{
+  "name": "futurumsoftweb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
