@@ -1,0 +1,37 @@
+.parent-title{
+    font-size: 55px;
+    font-weight: bold;
+    .blue-title{
+        color: var(--fs-hard-blue);
+    }
+
+    .white-title{
+        color: var(--fs-white);
+    }
+
+    .red-title{
+        color: var(--fs-red);
+    }
+
+    .left-title{
+        margin-top: 30%;
+        margin-left: 15%;
+        width: 70%;
+        text-align: left;
+    }
+
+    .right-title{
+        display: block;
+        margin-top: 30%;
+        margin-right: 15%;
+        width: 70%;
+        text-align: left;
+    }
+
+    .center-title{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-top: 5%;
+    }
+}

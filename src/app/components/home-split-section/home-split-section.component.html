@@ -1,0 +1,5 @@
+<div class="{{section}}-split-block">
+  <div *ngIf="split" class="left-block"><ng-content select="[left-block]"></ng-content></div>
+  <div *ngIf="split" class="right-block"><ng-content select="[right-block]"></ng-content></div>
+  <div *ngIf="!(split)" class="center-block"><ng-content select="[center-block]"></ng-content></div>
+</div>

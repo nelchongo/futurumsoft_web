@@ -24,3 +24,21 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+.highlight-red{
+    color: var(--fs-red)
+}
+
+.highlight-blue{
+    color: var(--fs-hard-blue)
+}
+
+.highlight-white{
+    color: var(--fs-white)
+}
+
+.vertical-align-img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

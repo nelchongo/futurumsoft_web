@@ -1,0 +1,11 @@
+<div class="header-row">
+    <div class="header-logo">
+        <img src="assets/icon/fs_light.png">
+    </div>
+
+    <div class="header-titles">
+        <div *ngFor="let title of titles" class="{{title.style}}" (click)="clickOntitle(title)">
+            {{title.name}}
+        </div>
+    </div>
+</div>

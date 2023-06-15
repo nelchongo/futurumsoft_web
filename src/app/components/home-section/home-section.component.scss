@@ -1,0 +1,17 @@
+.parent-section{
+    display: flex;
+    min-width: 100%;
+    min-height: 50em;
+    .section-1{
+        min-height:100%;
+        min-width:100%;
+        background-color: var(--fs-white);
+    }
+    
+    .section-2{
+        min-height:100%;
+        min-width: 100%;
+        background-color: var(--fs-soft-blue);
+        color: var(--fs-white);
+    }
+}

@@ -3,6 +3,12 @@
 
 /** Ionic CSS Variables **/
 :root {
+  /*FuturumSoft Colors*/
+  --fs-hard-blue: #071F5D;
+  --fs-soft-blue: #0099FF;
+  --fs-white: #F6F6F6;
+  --fs-red: #F8344A;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -74,9 +80,15 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-text-color: #071F5D;
+  --ion-text-color-rgb: 7,31,93;
+
+  --ion-font-family: 'Red Hat Display';
+  --unselected-fond-light: #808080;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   /*
    * Dark Colors
    * -------------------------------------------
@@ -156,8 +168,8 @@
     --ion-background-color: #000000;
     --ion-background-color-rgb: 0,0,0;
 
-    --ion-text-color: #ffffff;
-    --ion-text-color-rgb: 255,255,255;
+    --ion-text-color: #071F5D;
+    --ion-text-color-rgb: 7,31,93;
 
     --ion-color-step-50: #0d0d0d;
     --ion-color-step-100: #1a1a1a;
@@ -200,8 +212,8 @@
     --ion-background-color: #121212;
     --ion-background-color-rgb: 18,18,18;
 
-    --ion-text-color: #ffffff;
-    --ion-text-color-rgb: 255,255,255;
+    --ion-text-color: #071F5D;
+    --ion-text-color-rgb: 7,31,93;
 
     --ion-border-color: #222222;
 
@@ -233,4 +245,99 @@
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+
+ /*
+  * CUSTOM ASSETS
+  * -------------------------------------------
+  */
+/*LIGHT*/
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: light;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: light;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-LightItalic.ttf');
+}
+
+/*NORMAL*/
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: normal;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-Italic.ttf');
+}
+
+/*MEDIUM*/
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: medium;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: medium;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-MediumItalic.ttf');
+}
+
+/*SEMI BOLD*/
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: semi bold;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: semi bold;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-SemiBoldItalic.ttf');
+}
+
+/*BOLD*/
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: bold;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-BoldItalic.ttf');
+}
+
+/*Extra BOLD*/
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: italic;
+  font-weight: bold;
+  src: url('../assets/fonts/RedHatDisplay/RedHatDisplay-ExtraBoldItalic.ttf');
 }

@@ -1,0 +1,37 @@
+.header-row{
+    min-height: 70px;
+    max-height: 70px;
+    width: 100%;
+    display: flex;
+    background-color: #F6F6F6;
+
+    .header-logo{
+        margin-left: 1%;
+        min-height: 100%;
+        width: 50%;
+        img{
+            max-height: 100%;
+        }
+    }
+
+    .header-titles{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .title{
+            text-align: center;
+            flex: 0 0 120px;
+            color: #071F5D;
+        }
+
+        .title-selected{
+            text-align: center;
+            flex: 0 0 120px;
+            color: #F8344A;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+    }
+}
