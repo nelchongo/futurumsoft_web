@@ -1,6 +1,15 @@
 .parent-title{
-    font-size: 55px;
-    font-weight: bold;
+    .title-size-big{
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    .title-size-medium{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    
     .blue-title{
         color: var(--fs-hard-blue);
     }
@@ -14,7 +23,6 @@
     }
 
     .left-title{
-        margin-top: 30%;
         margin-left: 15%;
         width: 70%;
         text-align: left;
@@ -22,10 +30,25 @@
 
     .right-title{
         display: block;
-        margin-top: 30%;
         margin-right: 15%;
         width: 70%;
         text-align: left;
+    }
+
+    .vertical-alignment-middle{
+        margin-top: 30%;
+    }
+
+    .vertical-alignment-top{
+        margin-top: 2em;
+    }
+
+    @media (max-width: 960px) {
+        .right-title{
+            margin-left: 15%;
+            width: 70%;
+            text-align: left;
+        }
     }
 
     .center-title{
@@ -33,5 +56,29 @@
         width: 100%;
         text-align: center;
         padding-top: 5%;
+    }
+}
+
+@media (max-width: 630px) {
+    .parent-title{
+        .title-size-big{
+            font-size: 40px;   
+        }
+
+        .left-title{
+            margin-left: 15%;
+            width: 70%;
+            text-align: left;
+        }
+    
+        .right-title{
+            margin-left: 15%;
+            width: 70%;
+            text-align: left;
+        }
+
+        .vertical-alignment-middle{
+            margin-top: 50%;
+        }
     }
 }

@@ -9,6 +9,7 @@ import { SplitBlocksComponent } from './split-blocks/split-blocks.component';
 import { HomeSplitSectionComponent } from './home-split-section/home-split-section.component';
 import { HomeServiceCardsComponent } from './home-service-cards/home-service-cards.component';
 import { HomeTechStackComponent } from './home-tech-stack/home-tech-stack.component';
+import { HomeFormComponent } from './home-form/home-form.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { HomeTechStackComponent } from './home-tech-stack/home-tech-stack.compon
   ],
   declarations: [
     HeaderComponent,
+    HomeFormComponent,
     HomeSectionComponent,
     HomeSplitSectionComponent,
     HomeTechStackComponent,
@@ -27,6 +29,7 @@ import { HomeTechStackComponent } from './home-tech-stack/home-tech-stack.compon
   ],
   exports: [
     HeaderComponent,
+    HomeFormComponent,
     HomeSectionComponent,
     HomeSplitSectionComponent,
     HomeTechStackComponent,

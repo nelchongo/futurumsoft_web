@@ -48,4 +48,31 @@
         margin: 12px;
         display: inline-block;
     }
+
+    @media (max-width: 1200px) {
+        .card{
+            width: 30%;
+        }
+        .card:hover{
+            width: 31%;
+        }
+    }
+
+    @media (max-width: 960px) {
+        .card{
+            width: 45%;
+        }
+        .card:hover{
+            width: 46%;
+        }
+    }
+    
+    @media (max-width: 450px) {
+        .card{
+            width: 70%;
+        }
+        .card:hover{
+            width: 71%;
+        }
+    }
 }

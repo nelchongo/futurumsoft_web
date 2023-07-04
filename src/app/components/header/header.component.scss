@@ -4,6 +4,8 @@
     width: 100%;
     display: flex;
     background-color: #F6F6F6;
+    max-width: 1792px;
+    margin: auto;
 
     .header-logo{
         margin-left: 1%;
@@ -32,6 +34,27 @@
             color: #F8344A;
             text-decoration: underline;
             text-underline-offset: 4px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .header-logo{
+            width: 30%;
+        }
+
+        .header-titles{
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 850px) {
+        .header-logo{
+            width: 90%;
+        }
+
+        .header-titles{
+            width: 0%;
+            visibility: hidden;
         }
     }
 }

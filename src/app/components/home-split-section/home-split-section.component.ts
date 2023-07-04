@@ -7,9 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HomeSplitSectionComponent  implements OnInit {
 
-  @Input() section:String = "white"
-  @Input() split:boolean = true
-  constructor() { }
+  @Input() background:String = "white"
+  @Input() orientation:String = "left"
+  @Input() section_id:Number = 0
+
+  constructor() {}
   ngOnInit() {}
 
 }

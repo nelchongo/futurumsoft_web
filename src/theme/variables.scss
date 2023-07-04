@@ -9,8 +9,11 @@
   --fs-white: #F6F6F6;
   --fs-red: #F8344A;
 
+  --ion-background-color: var(--fs-white);
+  --ion-background-color-rgb: var(--fs-white);
+
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: var(--fs-hard-blue);
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;

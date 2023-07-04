@@ -1,6 +1,6 @@
 .parent-text{
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     .left-text{
         text-align: left;
         width: 70%;
@@ -14,10 +14,24 @@
         margin-right: 15%;
     }
 
+    @media (max-width: 960px) {
+        .right-text{
+            text-align: left;
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+
     .center-text{
         text-align: center;
         width: 30%;
         margin-right: 35%;
         margin-left: 35%;
+    }
+}
+
+@media (max-width: 630px) {
+    .parent-text{
+        font-size: 20px;
     }
 }

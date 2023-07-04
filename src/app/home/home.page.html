@@ -2,49 +2,65 @@
   <app-header [titles]="titles"></app-header>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" [scrollEvents]="true" (ionScroll)="handleScroll($any($event))">
   <!-- PRESENTATION -->
-  <app-home-split-section id="{{titles[0].name}}">
+  <app-home-split-section id="{{titles[0].name}}" orientation="left">
     <div left-block>
       <app-home-title>Welcome to the <span class="highlight-red">Futurum</span>, of the digital transformation</app-home-title>
       <div><app-home-text>We drive companies to their full potential</app-home-text></div>
     </div>
-    <img class="vertical-align-img" src="../../assets/images/g10.svg" right-block>
+    <!-- <img class="vertical-align-img" src="../../assets/images/g10.svg" right-block> -->
   </app-home-split-section>
 
   <!-- WHO ARE WE -->
-  <app-home-split-section section="blue" id="{{titles[1].name}}">
+  <app-home-split-section id="{{titles[1].name}}" background="blue" orientation="right" [section_id]=1>
     <div right-block>
-      <app-home-title title_type="blue" title_align="right">Who are <span class="highlight-white">WE</span></app-home-title>
+      <app-home-title title_type="blue" horizontal_alignment="right">Who are <span class="highlight-white">WE</span></app-home-title>
       <app-home-text text_align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</app-home-text>
     </div>
-    <img class="vertical-align-img" src="../../assets/images/about-us.svg" left-block>
   </app-home-split-section>
 
   <!-- SERVICES -->
-  <app-home-split-section [split]="false" id="{{titles[2].name}}">
+  <app-home-split-section id="{{titles[2].name}}" orientation="center" [section_id]=2>
     <div center-block>
-      <app-home-title title_type="red" title_align="center">Services</app-home-title>
+      <app-home-title title_type="red" horizontal_alignment="center" vertical_alignment="">Services</app-home-title>
       <app-home-service-cards></app-home-service-cards>
     </div>
-    <!-- <img class="vertical-align-img" src="../../assets/images/about-us.svg" left-block> -->
   </app-home-split-section>
 
-  <app-home-split-section section="blue" [split]="false" id="{{titles[3].name}}">
+  <!-- TECH STACK -->
+  <app-home-split-section id="{{titles[3].name}}" orientation="center" background="blue" [section_id]=3>
     <div center-block>
-      <app-home-title title_type="blue" title_align="center">Our Speciality</app-home-title>
+      <app-home-title title_type="blue" horizontal_alignment="center" vertical_alignment="">Our Speciality</app-home-title>
       <app-home-tech-stack></app-home-tech-stack>
     </div>
-    <!-- <img class="vertical-align-img" src="../../assets/images/about-us.svg" left-block> -->
   </app-home-split-section>
 
-  <app-home-split-section [split]="false" id="{{titles[4].name}}">
-    <div center-block>
+  <!-- CONTACT US -->
+  <app-home-split-section id="{{titles[4].name}}" orientation="split" [section_id]=4>
+    <div left-block>
+      <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="top">Contact <span class="highlight-red">Us</span></app-home-title>
+      <app-home-text >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</app-home-text>
+      
+      <!-- LOCATION -->
+      <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium"><ion-icon name="location-outline"></ion-icon> Head Office</app-home-title>
+      <app-home-text >Calle la cornisa</app-home-text>
+
+      <!-- EMAIL -->
+      <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium"><ion-icon name="mail-outline"></ion-icon> Email</app-home-title>
+      <app-home-text >nelson.candia@futurumsoft.com</app-home-text>
+
+      <!-- PHONE NUMBER -->
+      <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium"><ion-icon name="call-outline"></ion-icon> Call Center</app-home-title>
+      <app-home-text >+58 4241346208</app-home-text>
+      <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium">
+        <ion-icon name="logo-instagram"></ion-icon> <ion-icon name="logo-twitter"></ion-icon> <ion-icon name="logo-linkedin"></ion-icon>
+      </app-home-title>
+    </div>
+    <div right-block>
+      <app-home-form></app-home-form>
     </div>
   </app-home-split-section>
 
-  <app-home-split-section section="blue" [split]="false" id="{{titles[5].name}}">
-    <div center-block>
-    </div>
-  </app-home-split-section>
+  
 </ion-content>

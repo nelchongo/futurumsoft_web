@@ -1,5 +1,4 @@
-import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import {IonContent} from '@ionic/angular';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -21,7 +20,7 @@ export class HeaderComponent  implements OnInit {
   clickOntitle(selected_title:any){
     this.titles.forEach(title => {
       if (title.name == selected_title.name){
-        title.style = "title-selected";
+        // title.style = "title-selected";
         var id = document.getElementById(selected_title.name);
         if(id){
           id.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest"})
