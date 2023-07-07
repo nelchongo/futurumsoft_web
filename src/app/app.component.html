@@ -1,3 +1,19 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="end" contentId="content">
+    <!-- <ion-header>
+      <ion-toolbar>
+        
+      </ion-toolbar>
+    </ion-header> -->
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="true">
+          <ion-item *ngFor="let title of titles" (click)="clickOntitle(title)">
+            <ion-label>{{title.name}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content"></ion-router-outlet>
 </ion-app>

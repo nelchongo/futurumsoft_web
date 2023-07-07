@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { ScrollDetail } from '@ionic/angular';
+import { HomeSectionService } from '../services/utils/home-section.service';
 
 @Component({
   selector: 'app-home',
@@ -8,33 +9,9 @@ import { ScrollDetail } from '@ionic/angular';
 })
 export class HomePage {
 
-  titles = [{
-    id: 0,
-    name: "Home",
-    style: "title-selected"
-  },
-  {
-    id: 1,
-    name: "About Us",
-    style: "title"
-  },
-  {
-    id: 2,
-    name: "Services",
-    style: "title"
-  },
-  {
-    id: 3,
-    name: "Tech Stack",
-    style: "title"
-  },
-  {
-    id: 4,
-    name: "Contact Us",
-    style: "title"
-  }]
+  constructor(private homeSectionService: HomeSectionService) {}
 
-  constructor() {}
+  titles = this.homeSectionService.getTitles();
 
   handleScroll(ev: CustomEvent<ScrollDetail>) {
     var search_title:Number = 0;
