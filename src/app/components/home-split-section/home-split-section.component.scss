@@ -145,7 +145,6 @@
 }
 
 .split-block-orientation{
-    display: flex;
     width: 100%;
     min-height: 60em;
     max-width: 1792px;
@@ -169,8 +168,8 @@
     }
 }
 
-@media (max-width: 960px) {
-    .split-orientation{
+@media (max-width: 1200px) {
+    .split-block-orientation{
         .right-block{
             min-height: 100%;
             width: 100%;
@@ -180,7 +179,7 @@
     
         .left-block{
             min-height: 100%;
-            width: 0%;
+            width: 100%;
             float: left;
             text-align: center;
         }

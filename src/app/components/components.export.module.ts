@@ -12,10 +12,18 @@ import { HomeTechStackComponent } from './home-tech-stack/home-tech-stack.compon
 import { HomeFormComponent } from './home-form/home-form.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
 
+import { FormsModule } from '@angular/forms';
+import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module, RecaptchaModule } from "ng-recaptcha";
+import { environment } from 'src/environments/environment';
+import { RecaptchaService } from '../services/recaptcha/recaptcha.service';
+
 @NgModule({
   imports: [
     IonicModule,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    RecaptchaV3Module,
+    RecaptchaModule
   ],
   declarations: [
     HeaderComponent,
@@ -27,7 +35,7 @@ import { HomeFooterComponent } from './home-footer/home-footer.component';
     HomeTitleComponent,
     HomeTextComponent,
     HomeServiceCardsComponent,
-    SplitBlocksComponent,
+    SplitBlocksComponent
   ],
   exports: [
     HeaderComponent,
@@ -39,7 +47,8 @@ import { HomeFooterComponent } from './home-footer/home-footer.component';
     HomeTitleComponent,
     HomeTextComponent,
     HomeServiceCardsComponent,
-    SplitBlocksComponent,
-  ]
+    SplitBlocksComponent
+  ],
+  providers: [{provide: RECAPTCHA_V3_SITE_KEY, useValue: environment.recaptcha.siteKey }, RecaptchaService]
 })
 export class ComponentsModule {}

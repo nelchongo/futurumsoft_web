@@ -17,7 +17,7 @@
     }
 
     .top-footer{
-        margin-left: 8%;
+        margin-left: 2%;
         height: 80%;
         width: 100%;
         .first-box{
@@ -64,23 +64,33 @@
                 cursor: pointer;
             }
         }
+
+        @media (max-width: 960px) {
+            .first-box{
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .first-box{
+                width: 80%;
+            }
+        }
     }
 
     .separator{
         background: var(--fs-hard-blue);
         min-height: 1px;
-        min-width: 80%;
-        width: 84%;
+        min-width: 97%;
+        width: 97%;
         align-self: center;
         margin: auto;
     }
 
     .bottom-footer{
         max-height: 19%;
-        p{
-            font-size: 12px;
-            right: 8%;
-            position: absolute;
-        }
+        font-size: 12px;
+        text-align: right;
+        margin: 0.5% 2% 0% 0%;
     }
 }
