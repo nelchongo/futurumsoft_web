@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { ScrollDetail } from '@ionic/angular';
 import { HomeSectionService } from '../services/utils/home-section.service';
 
@@ -7,11 +7,21 @@ import { HomeSectionService } from '../services/utils/home-section.service';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit {
 
   constructor(private homeSectionService: HomeSectionService) {}
 
+  ngOnInit(): void {
+    this.changeFront()
+  }
+
   titles = this.homeSectionService.getTitles();
+  selectFrontMessage:number = 0;
+  frontMessages = ["Creación de App", "Inteligencia de Negocio", "Marketing Digital"];
+
+  async delay(ms: number) {
+    await new Promise<void>(resolve => setTimeout(()=>resolve(), ms));
+  }
 
   handleScroll(ev: CustomEvent<ScrollDetail>) {
     var search_title:Number = 0;
@@ -39,4 +49,14 @@ export class HomePage {
     this.titles.map((obj) => {obj.style = (obj.id == search_title) ? 'title-selected' : 'title'})
   }
 
+  async changeFront(){
+    while(true){
+      await this.delay(5000);
+      if(this.selectFrontMessage == 2){
+        this.selectFrontMessage = 0;
+      }else{
+        this.selectFrontMessage+=1;
+      }
+    }
+  }
 }

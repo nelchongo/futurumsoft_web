@@ -25,3 +25,14 @@
 #container a {
   text-decoration: none;
 }
+
+.highlight-fadein{
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation: fadeIn 3s; 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

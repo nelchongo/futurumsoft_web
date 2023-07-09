@@ -47,20 +47,20 @@ export class HomeFormComponent  implements OnInit {
       var missing_fields = [];
   
       if(!name_validation || this.name.length <= 3){
-        missing_fields.push("Name")
+        missing_fields.push("Nombre")
       }
       if(!phone_validation){
-        missing_fields.push("Phone")
+        missing_fields.push("Teléfono")
       }
       if(!email_validation){
         missing_fields.push("Email")
       }
       if(this.message.length <= 10){
-        missing_fields.push("Message")
+        missing_fields.push("Mensaje")
       }
   
       if(missing_fields.length > 0){
-        this.presentAlert("Error", "There seems to be some errors with this fields:", missing_fields.toString().split(',').join(', '))
+        this.presentAlert("Error", "Pareciera haber un error con estos campos:", missing_fields.toString().split(',').join(', '))
       }else{
         var message = "There's a new potential client:\n\n"
         + "Name: " + this.name + "\n"
@@ -69,7 +69,7 @@ export class HomeFormComponent  implements OnInit {
         + "Message: " + this.message + "\n"
         this.formService.sendEmail("Potential Client", message)
   
-        this.presentAlert("Thanks", "", "We are going to get in touch with you within the next 24 hours")
+        this.presentAlert("Gracias", "", "Te estaremos contactándo a la brevedad")
         this.name = ""
         this.phone = ""
         this.email = ""

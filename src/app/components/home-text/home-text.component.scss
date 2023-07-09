@@ -1,14 +1,15 @@
-.parent-text{
+// SMALL
+.parent-text-small{
     display: block;
-    font-size: 18px;
+    font-size: 25px;
     .left-text{
-        text-align: left;
+        text-align: justify;
         width: 70%;
         margin-left: 15%;
     }
 
     .right-text{
-        text-align: left;
+        text-align: justify;
         width: 70%;
         // margin-left: auto;
         margin-right: 15%;
@@ -16,7 +17,7 @@
 
     @media (max-width: 960px) {
         .right-text{
-            text-align: left;
+            text-align: justify;
             width: 70%;
             margin-left: 15%;
         }
@@ -24,14 +25,54 @@
 
     .center-text{
         text-align: center;
-        width: 30%;
-        margin-right: 35%;
-        margin-left: 35%;
+        width: 50%;
+        margin: auto;
+        // margin-right: 35%;
+        // margin-left: 35%;
     }
 }
 
 @media (max-width: 630px) {
-    .parent-text{
-        font-size: 20px;
+    .parent-text-small{
+        font-size: 26px;
+    }
+}
+
+
+// BIG
+.parent-text-big{
+    display: block;
+    font-size: 28px;
+    .left-text{
+        text-align: justify;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .right-text{
+        text-align: justify;
+        width: 70%;
+        // margin-left: auto;
+        margin-right: 15%;
+    }
+
+    @media (max-width: 960px) {
+        .right-text{
+            text-align: justify;
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+
+    .center-text{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 630px) {
+    .parent-text-big{
+        font-size: 30px;
     }
 }

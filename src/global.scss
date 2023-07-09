@@ -37,10 +37,19 @@
     color: var(--fs-white)
 }
 
+.highlight-bold-italic{
+    font-weight: bold;
+    font-style: italic;
+}
+
 .vertical-align-img{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.special-message{
+    margin-top: 10%;
 }
 
 // :host{

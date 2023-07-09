@@ -9,10 +9,14 @@
 <path d="M241.011 802.071L123.071 920.011" stroke="#0099FF" stroke-width="20" stroke-linecap="round"/>
 <circle cx="220.652" cy="822.43" r="10" transform="rotate(-135 220.652 822.43)" fill="#071F5D"/>
 <circle cx="139.335" cy="903.747" r="10" transform="rotate(-135 139.335 903.747)" fill="#F8344A"/>
-<path d="M1389.03 182.366L1506.97 64.4262" stroke="#0099FF" stroke-width="20" stroke-linecap="round"/>
-<path d="M1389.03 182.366L1506.97 64.4262" stroke="#0099FF" stroke-width="20" stroke-linecap="round"/>
-<circle cx="10" cy="10" r="10" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1423.53 162.007)" fill="#071F5D"/>
-<circle cx="10" cy="10" r="10" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1504.85 80.6896)" fill="#F8344A"/>
+<path d="M1508.07 177.011L1626.01 59.0711" stroke="#0099FF" stroke-width="20" stroke-linecap="round"/>
+<path d="M1508.07 177.011L1626.01 59.0711" stroke="#0099FF" stroke-width="20" stroke-linecap="round"/>
+<circle cx="10" cy="10" r="10" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1542.57 156.652)" fill="#071F5D"/>
+<circle cx="10" cy="10" r="10" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1623.89 75.3345)" fill="#F8344A"/>
+<path d="M1536.07 573.011L1654.01 455.071" stroke="#0099FF" stroke-width="20" stroke-linecap="round"/>
+<path d="M1536.07 573.011L1654.01 455.071" stroke="#0099FF" stroke-width="20" stroke-linecap="round"/>
+<circle cx="10" cy="10" r="10" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1570.57 552.652)" fill="#071F5D"/>
+<circle cx="10" cy="10" r="10" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1651.89 471.334)" fill="#F8344A"/>
 <path d="M1531.03 968.366L1648.97 850.426" stroke="#0099FF" stroke-width="20" stroke-linecap="round"/>
 <path d="M1531.03 968.366L1648.97 850.426" stroke="#0099FF" stroke-width="20" stroke-linecap="round"/>
 <circle cx="10" cy="10" r="10" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 1565.53 948.007)" fill="#071F5D"/>
@@ -32,9 +36,6 @@
 <path d="M1882.97 117.426L1824 176.396L1765.03 235.366" stroke="#071F5D" stroke-width="20" stroke-linecap="round"/>
 <circle cx="1784.83" cy="215.567" r="10" transform="rotate(-135 1784.83 215.567)" fill="#F8344A"/>
 <circle cx="1861.9" cy="138.492" r="10" transform="rotate(-135 1861.9 138.492)" fill="#F6F6F6"/>
-<path d="M757.011 102.071L698.041 161.041L639.071 220.011" stroke="#071F5D" stroke-width="20" stroke-linecap="round"/>
-<circle cx="658.87" cy="200.212" r="10" transform="rotate(-135 658.87 200.212)" fill="#F8344A"/>
-<circle cx="735.945" cy="123.137" r="10" transform="rotate(-135 735.945 123.137)" fill="#F6F6F6"/>
 <path d="M909.011 275.071L850.041 334.041L791.071 393.011" stroke="#071F5D" stroke-width="20" stroke-linecap="round"/>
 <circle cx="810.87" cy="373.212" r="10" transform="rotate(-135 810.87 373.212)" fill="#F8344A"/>
 <circle cx="887.945" cy="296.137" r="10" transform="rotate(-135 887.945 296.137)" fill="#F6F6F6"/>
@@ -44,11 +45,10 @@
 <path d="M195.97 129.426L137 188.396L78.0302 247.366" stroke="#071F5D" stroke-width="20" stroke-linecap="round"/>
 <circle cx="97.8291" cy="227.567" r="10" transform="rotate(-135 97.8291 227.567)" fill="#F6F6F6"/>
 <circle cx="174.904" cy="150.492" r="10" transform="rotate(-135 174.904 150.492)" fill="#0099FF"/>
-<path d="M1206.01 107.071L1147.04 166.041L1088.07 225.011" stroke="#071F5D" stroke-width="20" stroke-linecap="round"/>
-<circle cx="1107.87" cy="205.212" r="10" transform="rotate(-135 1107.87 205.212)" fill="#F6F6F6"/>
-<circle cx="1184.94" cy="128.137" r="10" transform="rotate(-135 1184.94 128.137)" fill="#0099FF"/>
 <path d="M123.292 642.462L60.7076 705.046" stroke="#F8344A" stroke-width="20" stroke-linecap="round"/>
 <circle cx="116.216" cy="649.539" r="10" transform="rotate(-135 116.216 649.539)" fill="#0099FF"/>
+<path d="M488.656 626.071L426.071 688.656" stroke="#F8344A" stroke-width="20" stroke-linecap="round"/>
+<circle cx="481.579" cy="633.148" r="10" transform="rotate(-135 481.579 633.148)" fill="#0099FF"/>
 <path d="M488.656 626.071L426.071 688.656" stroke="#F8344A" stroke-width="20" stroke-linecap="round"/>
 <circle cx="481.579" cy="633.148" r="10" transform="rotate(-135 481.579 633.148)" fill="#0099FF"/>
 <path d="M631.656 366.071L569.071 428.656" stroke="#F8344A" stroke-width="20" stroke-linecap="round"/>

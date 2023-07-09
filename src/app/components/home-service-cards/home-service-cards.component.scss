@@ -8,33 +8,34 @@
         border-radius: 10px;
         background: var(--fs-soft-blue);
         width: 20%;
-        height: 20em;
+        height: 24em;
         margin: 10px;
         display: inline-block;
 
         .card-title{
             text-align: left;
             padding-top: 10%;
-            padding-left: 5%;
+            padding-left: 8%;
             min-height: 25%;
             font-size: 25px;
             font-weight: bold;
         }
 
         .card-text{
-            text-align: left;
+            text-align: justify;
             vertical-align: middle;
-            padding-left: 5%;
+            padding: 5% 8% 5% 8%;
             min-height: 55%;
             max-height: 55%;
             overflow: hidden;
             color: var(--fs-white);
+            font-size: 19px;
         }
 
         .call-on{
             vertical-align: bottom;
             text-align: left;
-            padding-left: 5%;
+            padding-left: 8%;
             padding-top: 5%;
             font-size: 15px;
             font-weight: bold;
@@ -44,12 +45,12 @@
 
     .card:hover{
         width: 21%;
-        height: 21em;
+        height: 25em;
         margin: 12px;
         display: inline-block;
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1300px) {
         .card{
             width: 30%;
         }
@@ -67,7 +68,7 @@
         }
     }
     
-    @media (max-width: 450px) {
+    @media (max-width: 580px) {
         .card{
             width: 70%;
         }

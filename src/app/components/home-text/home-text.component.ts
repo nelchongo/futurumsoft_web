@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HomeTextComponent  implements OnInit {
 
   @Input() text_align:String = 'left'
+  @Input() text_size:String = 'small'
   constructor() { }
   ngOnInit() {}
 

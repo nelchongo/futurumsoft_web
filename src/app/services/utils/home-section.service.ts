@@ -10,27 +10,27 @@ export class HomeSectionService implements OnInit {
 
   public titles = [{
     id: 0,
-    name: "Home",
+    name: "Inicio",
     style: "title-selected"
   },
   {
     id: 1,
-    name: "About Us",
+    name: "Conócenos",
     style: "title"
   },
   {
     id: 2,
-    name: "Services",
+    name: "Servicios",
     style: "title"
   },
   {
     id: 3,
-    name: "Tech Stack",
+    name: "Tecnologías",
     style: "title"
   },
   {
     id: 4,
-    name: "Contact Us",
+    name: "Hablemos",
     style: "title"
   }]
 

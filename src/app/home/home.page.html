@@ -6,8 +6,12 @@
   <!-- PRESENTATION -->
   <app-home-split-section id="{{titles[0].name}}" orientation="left">
     <div left-block>
-      <app-home-title>Welcome to the <span class="highlight-red">Futurum</span>, of the digital transformation</app-home-title>
-      <div><app-home-text>We drive companies to their full potential</app-home-text></div>
+      <app-home-title>La transformación digital comienza por
+        <span class="highlight-red highlight-fadein">{{frontMessages[selectFrontMessage]}}</span>
+        <!-- a traves de la transformación digital  -->
+        <!-- <span class="highlight-red">Transformación Digital</span> -->
+      </app-home-title>
+      <!-- <div><app-home-text [text_size]="">We drive companies to their full potential</app-home-text></div> -->
     </div>
     <!-- <img class="vertical-align-img" src="../../assets/images/g10.svg" right-block> -->
   </app-home-split-section>
@@ -15,15 +19,15 @@
   <!-- WHO ARE WE -->
   <app-home-split-section id="{{titles[1].name}}" background="blue" orientation="right" [section_id]=1>
     <div right-block>
-      <app-home-title title_type="blue" horizontal_alignment="right">Who are <span class="highlight-white">WE</span></app-home-title>
-      <app-home-text text_align="right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</app-home-text>
+      <app-home-title title_type="blue" horizontal_alignment="right"><span class="highlight-white">Conócenos</span></app-home-title>
+      <app-home-text text_align="right">En FuturumSoft creamos <span class="highlight-white">negocios inteligentes</span> a través de la transformación digital, por medio de la automatización de  procesos con la más alta calidad, claridad y seguridad, para desarrollar el máximo potencial.</app-home-text>
     </div>
   </app-home-split-section>
 
   <!-- SERVICES -->
   <app-home-split-section id="{{titles[2].name}}" orientation="center" [section_id]=2>
     <div center-block>
-      <app-home-title title_type="red" horizontal_alignment="center" vertical_alignment="">Services</app-home-title>
+      <app-home-title title_type="blue" horizontal_alignment="center" vertical_alignment="">¿Qué podemos hacer por ti?</app-home-title>
       <app-home-service-cards></app-home-service-cards>
     </div>
   </app-home-split-section>
@@ -31,7 +35,8 @@
   <!-- TECH STACK -->
   <app-home-split-section id="{{titles[3].name}}" orientation="center" background="blue" [section_id]=3>
     <div center-block>
-      <app-home-title title_type="blue" horizontal_alignment="center" vertical_alignment="">Our Speciality</app-home-title>
+      <app-home-title title_type="blue" horizontal_alignment="center" vertical_alignment="">Tecnologías</app-home-title>
+      <app-home-text text_align="center">Trabajamos con las mejores herramientas para tu proyecto</app-home-text>
       <app-home-tech-stack></app-home-tech-stack>
     </div>
   </app-home-split-section>
@@ -39,22 +44,26 @@
   <!-- CONTACT US -->
   <app-home-split-section id="{{titles[4].name}}" orientation="split" [section_id]=4>
     <div left-block>
-      <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="top">Contact <span class="highlight-red">Us</span></app-home-title>
-      <app-home-text >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</app-home-text>
+      <app-home-title title_type="red" horizontal_alignment="left" vertical_alignment="top">¿Listo para el cambio?</app-home-title>
+      <app-home-text text_size="big">Llevemos tu negocio a la <span class="highlight-bold-italic">Transformación Digital</span></app-home-text>
       
-      <!-- LOCATION -->
-      <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium"><ion-icon name="location-outline"></ion-icon> Head Office</app-home-title>
-      <app-home-text >Calle la cornisa</app-home-text>
+      <div class="special-message">
+        <!-- <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" >
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+          Cuéntanos sobre tu proyecto
+        </app-home-title> -->
+        
+        <!-- <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium"><ion-icon name="location-outline"></ion-icon> Head Office</app-home-title>
+        <app-home-text >Calle la cornisa</app-home-text>
 
-      <!-- EMAIL -->
-      <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium"><ion-icon name="mail-outline"></ion-icon> Email</app-home-title>
-      <app-home-text >nelson.candia@futurumsoft.com</app-home-text>
+        <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium"><ion-icon name="mail-outline"></ion-icon> Email</app-home-title>
+        <app-home-text >nelson.candia@futurumsoft.com</app-home-text>
 
-      <!-- PHONE NUMBER -->
-      <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium"><ion-icon name="call-outline"></ion-icon> Call Center</app-home-title>
-      <app-home-text >+58 4241346208</app-home-text>
-      <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium">
-      </app-home-title>
+        <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium"><ion-icon name="call-outline"></ion-icon> Call Center</app-home-title>
+        <app-home-text >+58 4241346208</app-home-text>
+        <app-home-title title_type="blue" horizontal_alignment="left" vertical_alignment="" title_size="medium">
+        </app-home-title>-->
+      </div>
     </div>
     <div right-block>
       <app-home-form></app-home-form>
