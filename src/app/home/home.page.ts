@@ -11,6 +11,8 @@ export class HomePage implements OnInit {
 
   constructor(private homeSectionService: HomeSectionService) {}
 
+  higlight_class:string = "highlight-fadein"
+
   ngOnInit(): void {
     this.changeFront()
   }
@@ -51,7 +53,10 @@ export class HomePage implements OnInit {
 
   async changeFront(){
     while(true){
-      await this.delay(5000);
+      this.higlight_class = "highlight-fadein";
+      await this.delay(3000);
+      this.higlight_class = "highlight-fadeout";
+      await this.delay(2000);
       if(this.selectFrontMessage == 2){
         this.selectFrontMessage = 0;
       }else{

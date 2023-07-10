@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialMediaService } from 'src/app/services/utils/social-media.service';
 
 @Component({
   selector: 'app-home-footer',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeFooterComponent  implements OnInit {
 
-  constructor() { }
-
+  constructor(private socialMedias: SocialMediaService) {}
+  socialMedia = this.socialMedias.getSocialMedia()
   ngOnInit() {}
 
+  resendSocial(social: any){
+    console.log(social.link);
+    document.location.href = social.link;
+  }
 }
