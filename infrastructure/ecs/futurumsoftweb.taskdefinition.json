@@ -1,0 +1,96 @@
+{
+    "ipcMode": null,
+    "executionRoleArn": "arn:aws:iam::549532010890:role/futurumsoftweb-execution",
+    "containerDefinitions": [
+        {
+            "name": "futurumsoftweb",
+            "dnsSearchDomains": null,
+            "environmentFiles": null,
+            "secrets": [],
+            "entryPoint": null,
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ],
+            "command": null,
+            "linuxParameters": {
+                "initProcessEnabled": true
+            },
+            "cpu": 0,
+            "environment": [
+            ],
+            "resourceRequirements": null,
+            "ulimits": null,
+            "dnsServers": null,
+            "mountPoints": null,
+            "workingDirectory": null,
+            "dockerSecurityOptions": null,
+            "memory": null,
+            "memoryReservation": null,
+            "volumesFrom": [],
+            "stopTimeout": null,
+            "image": "549532010890.dkr.ecr.us-east-1.amazonaws.com/futurumsoftweb:latest",
+            "startTimeout": null,
+            "firelensConfiguration": null,
+            "dependsOn": null,
+            "disableNetworking": null,
+            "interactive": null,
+            "healthCheck": {
+                "retries": 3,
+                "command": ["CMD", "service", "nginx", "status"],
+                "timeout": 5,
+                "interval": 30,
+                "startPeriod": null
+            },
+            "essential": true,
+            "links": null,
+            "hostname": null,
+            "extraHosts": null,
+            "pseudoTerminal": null,
+            "user": null,
+            "readonlyRootFilesystem": null,
+            "dockerLabels": null,
+            "systemControls": null,
+            "privileged": null,
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "firelens-container",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-create-group": "true",
+                    "awslogs-stream-prefix": "firelens"
+                }
+            }
+        }
+    ],
+    "cpu": "2048",
+    "memory": "4096",
+    "taskRoleArn": "arn:aws:iam::549532010890:role/futurumsoftweb-task",
+    "family": "futurumsoftweb",
+    "pidMode": null,
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "networkMode": "awsvpc",
+    "runtimePlatform": {
+        "operatingSystemFamily": "LINUX",
+        "cpuArchitecture": null
+    },
+    "inferenceAccelerators": [],
+    "proxyConfiguration": null,
+    "volumes": [
+    ],
+    "tags": [
+        {
+            "key": "app",
+            "value": "futurumsoftweb"
+        },
+        {
+            "key": "env",
+            "value": "prod"
+        }
+    ]
+}
