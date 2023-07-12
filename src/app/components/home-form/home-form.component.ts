@@ -42,7 +42,7 @@ export class HomeFormComponent  implements OnInit {
     //Verify that the there's a token and that this is not a bot
     if(this.recaptchaService.checkToken() != ""){
       var name_validation: boolean = this.name_expression.test(this.name); // true
-      var phone_validation: boolean = this.phone_expression.test(this.phone); // true
+      var phone_validation: boolean = true//this.phone_expression.test(this.phone); // true
       var email_validation: boolean = this.email_expression.test(this.email); // true
       var missing_fields = [];
   

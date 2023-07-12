@@ -14,7 +14,7 @@ export class HomeServiceCardsComponent  implements OnInit {
   },
   {
     title: "Inteligencia de Negocio",
-    message: "Te ayudamos a construir estrategias de negocio a través de los datos reales de la empresa, para mejorar tu producto o servicios y  conocer el cliente para tomar decisiones efectivas.",
+    message: "Te ayudamos a construir estrategias de negocio a partir de los datos reales de tu empresa para: mejorar tus productos/servicios, conocer el cliente y tomar desiciones efectivas",
   },
   {
     title: "Marketing Digital",

@@ -4,7 +4,8 @@
       {{service.title}}
     </div>
     <div class="card-text">
-      {{service.message}}
+      <!-- {{service.message}} -->
+      <div [innerHTML]="service.message"></div>
     </div>
     <div (click)="clickSend()" class="call-on">
       Hablemos  &#8594;

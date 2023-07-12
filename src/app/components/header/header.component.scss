@@ -53,8 +53,10 @@
     }
 
     @media (max-width: 850px) {
+        min-height: 60px;
+        max-height: 60px;
         .header-logo{
-            width: 90%;
+            width: 85%;
         }
 
         .header-titles{

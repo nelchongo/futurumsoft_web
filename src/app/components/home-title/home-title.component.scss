@@ -67,7 +67,7 @@
 @media (max-width: 630px) {
     .parent-title{
         .title-size-big{
-            font-size: 40px;   
+            font-size: 28px;   
         }
 
         .left-title{
@@ -83,7 +83,14 @@
         }
 
         .vertical-alignment-middle{
-            margin-top: 50%;
+            // margin-top: 80%;
+            margin: 80% auto 0% auto;
+            width: 90%;
+            text-align: center;
+        }
+
+        .center-title{
+            padding-top: 10%;
         }
     }
 }

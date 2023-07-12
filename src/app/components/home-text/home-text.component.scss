@@ -25,7 +25,7 @@
 
     .center-text{
         text-align: center;
-        width: 50%;
+        width: 90%;
         margin: auto;
         // margin-right: 35%;
         // margin-left: 35%;
@@ -34,7 +34,7 @@
 
 @media (max-width: 630px) {
     .parent-text-small{
-        font-size: 26px;
+        font-size: 20px;
     }
 }
 
@@ -73,6 +73,6 @@
 
 @media (max-width: 630px) {
     .parent-text-big{
-        font-size: 30px;
+        font-size: 22px;
     }
 }
