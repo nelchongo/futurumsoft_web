@@ -18,3 +18,12 @@
         }
     }
 }
+
+@media (max-width: 580px) {
+    .center-card{
+        .card{
+            height: 3em;
+            max-width: 170px;
+        }
+    }
+}

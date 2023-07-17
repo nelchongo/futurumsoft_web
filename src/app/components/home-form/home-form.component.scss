@@ -3,11 +3,13 @@
     max-width: 90%;
     margin: 5em auto 5em auto;
     height: 40em;
+    background-color: var(--fs-white);
     box-shadow: 5px 5px 5px 5px #e3dede;
     border-radius: 10px;
     padding: 3em 2em 0em 1em;
 
     ion-item{
+        color: var(--fs-hard-blue);
         margin-bottom: 10px;
 
         ion-textarea{
@@ -16,7 +18,10 @@
     }
 
     ion-button{
+        max-height: 2.5em;
         margin-top: 5em;
         --border-radius: 20px;
+        background-color: var(--fs-hard-blue);
+        border-radius: 20px;
     }
 }
