@@ -66,8 +66,8 @@
             }
         }
     ],
-    "cpu": "2048",
-    "memory": "4096",
+    "cpu": "1024",
+    "memory": "2048",
     "taskRoleArn": "arn:aws:iam::549532010890:role/futurumsoftweb-task",
     "family": "futurumsoftweb",
     "pidMode": null,

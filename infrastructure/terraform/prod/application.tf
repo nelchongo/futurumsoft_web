@@ -1,5 +1,5 @@
 module "application" {
-    source = "git@github.com:NelsonECandia/fs_infrastructure.git?ref=v0.9.7"
+    source = "git@github.com:NelsonECandia/fs_infrastructure.git?ref=v0.10.4"
     app_name = "futurumsoftweb"
     tags = local.tags
     app_port = 80
@@ -9,4 +9,6 @@ module "application" {
     route_53_hosted_zone_id = "Z04211931VZIR5O4OUFHD"
     is_rds_available = false
     tg_api_token = "" #SET ONLY ON FIRST START
+    twingate_available = false
+    nat_available = false
 }
