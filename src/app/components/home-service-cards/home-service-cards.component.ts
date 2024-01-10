@@ -10,16 +10,16 @@ export class HomeServiceCardsComponent  implements OnInit {
   services = [
   {
     title: "Desarrollo Web/App",
-    message: "Creamos proyectos ajustado a las necesidades del cliente aplicando la mejor tecnología para tener un producto competitivo en el mercado mundial",
+    message: "Desarrollamos proyectos a medida, adaptados a las necesidades de nuestros clientes, empleando la tecnología más avanzada para asegurar la competitividad de nuestros productos a nivel mundial.",
   },
   {
     title: "Inteligencia de Negocio",
-    message: "Te ayudamos a construir estrategias de negocio a partir de los datos reales de tu empresa para: mejorar tus productos/servicios, conocer el cliente y tomar desiciones efectivas",
+    message: "Facilitamos la construcción de estrategias empresariales mediante el análisis de datos concretos de tu empresa, permitiéndote mejorar tus productos/servicios, comprender a tus clientes y tomar decisiones efectivas.",
   },
-  {
-    title: "Marketing Digital",
-    message: "Desarrollamos estrategias óptimas enfocadas en dar conocer y posicionar negocios en el mercado digital.",
-  },
+  // {
+  //   title: "Marketing Digital",
+  //   message: "Desarrollamos estrategias óptimas enfocadas en dar conocer y posicionar negocios en el mercado digital.",
+  // },
   ]
 
   constructor() {}

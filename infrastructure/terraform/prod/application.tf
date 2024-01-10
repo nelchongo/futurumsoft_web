@@ -10,5 +10,5 @@ module "application" {
     is_rds_available = false
     tg_api_token = "" #SET ONLY ON FIRST START
     twingate_available = false
-    nat_available = false
+    nat_available = true
 }
